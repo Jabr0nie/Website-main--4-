@@ -3,18 +3,17 @@
   height: 100%;
 }
 
-.topnav {
-border-bottom: solid 1px #7a8a99;
-}
 
 body {
     display: flexbox;
+
     flex-direction: column;
     width:100%;
     height: 100%;
     min-height: 100%;
     background-color: #10171f;
     margin: 0px;
+    margin-bottom: 100px;
   }
 
   .logo {
@@ -26,7 +25,7 @@ body {
   .logo:hover {
     cursor: pointer;
   }
-  
+
   .topnav a.icon {
     float: right;
     display: none;
@@ -61,27 +60,23 @@ body {
     align-items: center;
 
   }
-  .topNavLeft a{
-margin-right: 25px;
-  }
+
 
   button {
     border-radius: 5px; 
     width: 100px; 
     height: 30px; 
-    background-color:#1eeadb;
+    background-color:#10171f;
     color: #10171f;
     font-size: 15px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     }
   
-
-
-
-
-
-
-
+    .topnav button {
+      color: #1eeadb;
+      font-size: 25px;
+      background-color: none;
+    }
 
 
 
@@ -93,7 +88,11 @@ margin-right: 25px;
   vertical-align: center;
   margin-bottom: 1%;
   height: 15%;
-  width: 100%;
+  width: 80%;
+  border-bottom: solid 1px #7a8a99;
+width: 80%;
+padding-left: 10%;
+padding-right: 10%;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -146,16 +145,19 @@ margin-right: 25px;
     
     li a, .dropbtn {
       display: inline-block;
-      color: white;
+      color: #1eeadb;
       text-align: center;
       height: 100%;
+      width: 100%;
+      min-width: 50px;
       text-decoration: none;
       border-radius: 0px;
       border: none;
     }
     
     li a:hover, .dropdown:hover .dropbtn {
-      background-color: red;
+      background-color:  #1eeadb;
+      color: #10171f;
     }
     
     li.dropdown {
@@ -166,21 +168,25 @@ margin-right: 25px;
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #f9f9f9;
+      background-color: #10171f;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index:1;
     }
     
     .dropdown-content a {
-      color: black;
+      color: #7a8a99;
       padding: 12px 16px;
       text-decoration: none;
+      font-weight: 400;
       display: block;
       text-align: left;
     }
     
-    .dropdown-content a:hover {background-color: #f1f1f1;}
+    .dropdown-content a:hover {
+      font-size: 25px;
+      font-weight: 500;
+    }
     
     .dropdown:hover .dropdown-content {
       display: block;
@@ -190,4 +196,159 @@ margin-right: 25px;
       height: 100%;
 
     }
+
+.MainContent {
+  display: flexbox;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+
+}
+
+.AboutContainer {
+  color: #1eeadb;
+  height:100%;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.AboutContainer h1 {
+  color: #1eeadb;
+  font-weight: 600;
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.AboutContainer h2 {
+  color: #e2e7eb;
+  font-weight: 500;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.AboutContainer p {
+  color: #7a8a99;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.AboutContainer ul {
+  list-style-type:circle;
+  float: left;
+  padding-left: 5%;
+  padding-right: 10%;
+  color: #7a8a99;
+  height: fit-content;
+
+}
+
+.AboutContainer li {
+  text-align: left;
+  float: left;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.AboutContainer Strong {
+color: #e2e7eb;
+font-weight: 500;
+}
+
+
+
+.MainContentHome {
+  display: flexbox;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+
+}
+
+  
+.MainContentLeft {
+  width: 20%;  
+
+}
+
+
+
+  .MainContentLeft h1 {
+    color: #1eeadb;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .MainContentLeft h2 {
+    color: #e2e7eb;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .MainContentLeft h3 {
+    color: #27c45b;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+  }
+
+  .MainContentLeft h4 {
+    color: #c42727;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+  }
+  
+  .MainContentLeft p {
+    color: #7a8a99;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .MainContentLeft ul {
+    list-style-type:circle;
+    float: left;
+    padding-left: 5%;
+    padding-right: 10%;
+    color: #7a8a99;
+    height: fit-content;
+  
+  }
+
+  .MainContentLeft ol {
+    float: left;
+    padding-left: 5%;
+    padding-right: 10%;
+    color: #7a8a99;
+    height: fit-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+  
+  .MainContentLeft li {
+    text-align: left;
+    float: left;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    width: 70%;
+    padding: 0;
+  }
+  
+  .MainContentLeft Strong {
+  color: #e2e7eb;
+  font-weight: 500;
+  }
 
